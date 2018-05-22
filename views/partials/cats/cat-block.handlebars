@@ -1,9 +1,16 @@
 <li>
 	{{name}}
 
+
+{{!-- create div that will hold the info
+
+inside it, state if it's not eaten, create the button. --}}
+
 	<button class="change-sleep" data-id="{{id}}" data-newsleep="{{sleep}}">
-		{{#if sleep}}SLEEP TIME!{{else}}WAKE UP!{{/if}}
+		{{#if sleep}}
+		DEVOUR IT!
+		{{!-- {{else}}WAKE UP! --}}
+		{{/if}}
 	</button>
 
-	<button class="delete-cat" data-id="{{this.id}}">DELETE!</button>
 </li>
