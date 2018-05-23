@@ -1,16 +1,11 @@
 <li>
 	{{name}}
 
-
-{{!-- create div that will hold the info
-
-inside it, state if it's not eaten, create the button. --}}
-
+{{#if sleep}}
+  
 	<button class="change-sleep" data-id="{{id}}" data-newsleep="{{sleep}}">
-		{{#if sleep}}
 		DEVOUR IT!
-		{{!-- {{else}}WAKE UP! --}}
-		{{/if}}
 	</button>
-
+	
+{{/if}}
 </li>
